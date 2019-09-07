@@ -4,7 +4,42 @@ header {
     background-size: cover;
     height: 300px;
     background-position: center center;
+    display: flex;
     text-align: center;
     padding: 0 2em;
     color: rgb(240, 16, 16);
 }
+
+h1 {
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid chartreuse;
+    padding: 5px;
+    background: cyan;
+    transition: all 0.5s;
+    display: inline-block;
+}
+nav ul a:hover {
+    transform: scale(1.1);
+}
+
+#carouselExampleIndicators {
+    width: 80%;
+    border: solid;
+    margin: auto;
+    background: #333;
+  }
+  #carouselExampleIndicators img {
+    max-height: 300px;
+    margin: auto;
+  }

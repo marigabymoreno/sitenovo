@@ -4,25 +4,72 @@
        <title>Mi PrimeraPagina Gastronomia Reinventandome</title>
        <meta charset="utf-8">
        <link rel="stylesheet" href="css/style.css">
-       
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>   
     <body>
+        <nav>
+            <ul>
+                <li><a href="#intro">Início</a></li>
+                <li><a href="#pratos">Pratos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
         <header>
             <h1>Gastronomia Tipica</h1>
-            <a href="#">teste</a>
             <!-- preguntar como ingresar un enlace notas para yo recordadar lo que aqui escrib no se refleja een la pagina-->
-            <h2>Llego la hora de Reinventarse</h2>
-
-            <p>Traigo para tí, un paseo por los recuerdos de la gastronomia de nuestra tierra,
-                    aquellos platos que nos hacen recordar de donde venimos, 
-                    que nos llevan a saborear el pasado de una manera sabrosa. 
-                    </br>
-                    Y para ti, que no has tenido la dicha de experimentar nuestros sabores, 
-                Ven y experimenta, conoce nuestro pais y nuestra cultura a traves de la comida.
-
-                    <br></br>Implementando también en cuaqluier plato un poco de nuestra sazon. 
-
-            </p>
+            
         </header>
+        <main>
+            <section id="intro">
+                <h2>Llego la hora de Reinventarse</h2>
+
+                <p>Traigo para tí, un paseo por los recuerdos de la gastronomia de nuestra tierra,
+                        aquellos platos que nos hacen recordar de donde venimos, 
+                        que nos llevan a saborear el pasado de una manera sabrosa. 
+                        </br>
+                        Y para ti, que no has tenido la dicha de experimentar nuestros sabores, 
+                    Ven y experimenta, conoce nuestro pais y nuestra cultura a traves de la comida.
+
+                        <br></br>Implementando también en cuaqluier plato un poco de nuestra sazon. 
+
+                </p>
+            </section>
+            <section id="pratos">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block" src="https://images.pexels.com/photos/2443865/pexels-photo-2443865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block" src="https://images.pexels.com/photos/2014693/pexels-photo-2014693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block" src="https://images.pexels.com/photos/2014693/pexels-photo-2014693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $('.carousel').carousel({
+                interval: 4000
+            })
+        </script>
     </body>
 </html>
