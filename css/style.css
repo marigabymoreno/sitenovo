@@ -1,45 +1,204 @@
-header {
-    background: url("../img/gastronomiavenezuela.jpg");
+header 
+{
+    background: url("../img/imagenes/gastronomiavenezuela.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 500px;
     background-position: center center;
     display: flex;
     text-align: center;
-    padding: 0 2em;
-    color: rgb(240, 16, 16);
+}
+      
+body
+{
+    background:url('../img/restaurant_icons.png');
+    background-repeat: repeat;
+    background-attachment: scroll;
+
 }
 
-h1 {
+h1, h2, h3 
+{
+    color: rgb(18, 21, 182);
+    font-size: 200%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1
+{
     margin: auto;
+    text-align: center;
+    text-anchor: middle;
+    font-size: 300%;
+
 }
 
-nav ul {
+p
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Georgia, Times, 'Times New Roman', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-indent: 50px;
+    text-align: justify;
+
+}
+
+
+ul.menu
+{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    padding: 0;
     justify-content: space-around;
+    text-align: center;
+    align-items: flex-start;
+
+}
+
+nav
+{
+    width: 100%;
 }
 
 nav ul a {
+    text-decoration: blue; 
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.menu li
+{
+    display: inline-flex;
+    text-align: center;
+     right:10em;
+     
+
+}
+
+ .uno
+{
+    list-style: none;
+    display: block;
+    border-bottom: 2px;
+    justify-content: space-around;
+
+}
+
+.uno a
+{
     text-decoration: none;
-    color: inherit;
-    border: 2px solid chartreuse;
+    color: blue;
+    border-radius: 100%;
     padding: 5px;
-    background: cyan;
+    background: rgb(233, 233, 30);
     transition: all 0.5s;
     display: inline-block;
+    font-weight: bold;
+    
 }
-nav ul a:hover {
-    transform: scale(1.1);
+ .uno a:hover{
+ opacity: .8;
+ padding: 10px;
+
+}
+ 
+ header .uno a:hover{
+     transform:(1.5);
 }
 
 #carouselExampleIndicators {
     width: 80%;
-    border: solid;
-    margin: auto;
-    background: #333;
-  }
+    background: url(../img/bandera.jpg); 
+    background-size: cover;
+    height: 350px;
+    background-position: center center;
+    display:flex;
+    margin:auto;
+
+
+}
   #carouselExampleIndicators img {
     max-height: 300px;
     margin: auto;
-  }
+    
+}
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      
+}
+
+  #formulario  
+{
+      background: url(../img/araguaney.jpg);
+      font-family: Arial;
+}
+
+  .formulario
+{
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.formulario input{
+    display: block;
+
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea 
+
+{
+    width: 100%;
+    padding: 20px; 
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px blue;
+    font-family:arial;
+    font-size: 16px;
+
+}
+
+.formulario textarea {
+    min-height: 120px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+
+}
+.formulario input[type="submit"]
+
+{
+    width: 40%;
+    margin:0 auto;
+    background: rgb(233, 233, 30);
+    padding: 5px;
+    border-radius: 5%;
+    transition: all 0.5s;
+    font-weight: bold;
+    display: block;
+    color: blue;
+    
+
+}
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.main {
+    width: 70%;
+
+}
